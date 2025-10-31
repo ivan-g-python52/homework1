@@ -9,6 +9,15 @@ while (isRunning){
         case 'показать баланс':
             alert(balance);
             break;
+        case 'снять средства':
+            let balanceMinus =Number(prompt('Сколько вы хотите снять?'));
+            if (balance>balanceMinus) {
+                balance-=balanceMinus;
+                alert(`Теперь ваш баланс:${balance}`);
+            } else {
+                alert('У вас недостаточно средств для снятия!');
+            }
+            break;
         default:
             alert('Ошибка')
             break;
