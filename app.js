@@ -23,6 +23,10 @@ while (isRunning){
             balance+=balancePlus;
             alert(`Теперь ваш баланс:${balance}`);
             break;
+        case 'выйти':
+            alert('До свидания!');
+            isRunning = false;
+            break;
         default:
             alert('Ошибка')
             break;
