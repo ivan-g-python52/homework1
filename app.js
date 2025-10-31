@@ -18,6 +18,11 @@ while (isRunning){
                 alert('У вас недостаточно средств для снятия!');
             }
             break;
+        case 'пополнить счёт':
+            let balancePlus = Number(prompt('Сколько вы хотите положить на счёт?'));
+            balance+=balancePlus;
+            alert(`Теперь ваш баланс:${balance}`);
+            break;
         default:
             alert('Ошибка')
             break;
